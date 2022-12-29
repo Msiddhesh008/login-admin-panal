@@ -1,0 +1,168 @@
+body{
+    background-color: #cf9fff98;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #f19f06; 
+}
+
+section{
+    display: block;
+    margin: 0.5rem;
+    width: 70%;
+    background-color: #141124;
+    height: 95vh;
+    display: flex;
+    box-shadow: #333333 5px 5px 6px;
+}
+
+section .banner{
+    width: 50%;
+    height: 100%;
+    background-image: url(images/purple-dreams.jpg);
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+  position: relative;
+
+
+}
+
+section .banner img{
+    cursor: grab;
+    position: absolute;
+    /* margin-top: 2rem; */
+    width: 160%;
+    top: 0;
+    right: 0;
+    transition: 0.5s;
+    /* transform: translateY(-4px); */
+}
+
+section .banner img:hover{
+    
+    width:177%;
+}
+
+section .banner h1{
+    color: #ffffff;
+}
+
+section .banner .text-cnt{
+    position: absolute;
+    color: #ffffff;
+    line-height: 10px;
+    bottom: 1.5rem;
+    left: 3rem;
+}
+
+
+section .banner .admin{
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    background-color: #e0850d;
+    border: 1px solid #e0850d;
+    color: #fff;
+    cursor: pointer;
+    padding: 0.5rem;
+    font-weight: bolder;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+section .banner .admin:hover{
+    border: 1px solid #fff;
+}
+
+section form{
+    box-sizing: border-box;
+    width: 50%;
+    padding:1rem 4rem;
+    height: 90vh;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+
+}
+
+section form label{
+    font-size: small;
+}
+
+h1{
+    color: #63697f;
+}
+
+section form input{
+    background-color:#2b2845;
+    width: 90%;
+    height: 2rem;
+    margin: 0.5rem 0rem;
+    color: #fff;
+    border: 1px solid #2b2845;
+    padding: 0 1rem;
+    outline: none;
+}
+
+section form input:focus{
+    border-bottom: 2px solid #16b1d2;
+}
+
+section form input[type= "submit"]{
+    margin-top: 1rem;
+    font-weight: bold;
+    height: auto;
+    height: 2.5rem;
+    width: 100%;
+    border: none;
+    background-color: #16b1d2;
+    color: #ffffff;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+section form input[type= "submit"]:hover{
+    opacity: 90%;
+}
+
+
+
+table{
+    display: none;
+    margin-top: 1rem;
+    background-image: url(images/purple-dreams.jpg);
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+  position: relative;
+    background-color: #63697f;
+    border-collapse:collapse;
+    width:auto;
+    color: #ffffff;
+    text-align: left;
+    border: 1px solid #16b1d2;
+    box-shadow: #333333 5px 5px 6px;
+}
+
+tr, td{
+    border: 0.5px dotted #16b1d2;
+    padding: 0.5rem 4rem 0.5rem 1rem;
+}
+
+th{
+    width: 15vw;
+    background-color: #000000;
+    padding: 0.5rem;
+    color: #ffffff;
+    border: 1px solid #16b1d2;
+}
+
+tr:nth-child(odd) {
+    background-color: #ffffff1a;
+}
