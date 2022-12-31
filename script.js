@@ -58,7 +58,7 @@ if (localStorage.getItem("empArr") != null) {
 submitBtn.addEventListener("click", function (e) {
   e.preventDefault();
 
-  var empData = new EmployeeData(firstName.value, gameName.value, password.value, email.value);
+  var empData = new EmployeeData(firstName.value.toUpperCase(), gameName.value.toUpperCase(), password.value, email.value.toLowerCase());
 
   var old_data = JSON.parse(localStorage.getItem("empArr"));
   old_data.push(empData);
