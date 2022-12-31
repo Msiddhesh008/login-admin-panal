@@ -1,8 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap');
 body{
     background-color: #cf9fff98;
     display: flex;
     align-items: center;
     flex-direction: column;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
 }
 ::-webkit-scrollbar {
   width: 4px;
@@ -14,7 +18,7 @@ body{
 
 section{
     display: block;
-    margin: 0.5rem;
+    margin: 1rem;
     width: 70%;
     background-color: #141124;
     height: 95vh;
@@ -166,3 +170,80 @@ th{
 tr:nth-child(odd) {
     background-color: #ffffff1a;
 }
+
+@media only screen and (max-width: 600px) {
+ 
+    section{
+        margin: 0.5rem;
+        padding: 0;
+        display: block;
+        width: 95%;
+        height: 110vh;
+    }
+    
+    section .banner{
+        width: auto;
+        height: 35%;   
+        font-size: smaller;
+    
+    }
+    
+    section .banner img{
+        position: absolute;
+        width: 110%;
+        transition: 0.5s;
+        margin-bottom: 2rem;
+
+    }
+    
+    section .banner img:hover{
+        width:120%;
+    }
+    
+    section .banner .text-cnt{
+        position: absolute;
+        color: #ffffff;
+        line-height: 10px;
+        bottom: 0rem;
+        left: 1rem;
+    }
+
+    
+    section form{
+        width: 100%;
+        padding:1rem 2rem;
+    }
+   
+    
+    
+
+
+
+
+table{
+    transform: translate(18rem);
+    display: none;
+    background-color: #63697f;
+    border-collapse:collapse;
+    color: #ffffff;
+    text-align: left;
+    border: 1px solid #16b1d2;
+    box-shadow: #333333 5px 5px 6px;
+}
+
+tr, td{
+    border: 0.5px dotted #16b1d2;
+}
+
+th{
+
+    background-color: #000000;
+    padding: 0.5rem;
+    color: #ffffff;
+    border: 1px solid #16b1d2;
+}
+
+tr:nth-child(odd) {
+    background-color: #ffffff1a;
+}
+  }
